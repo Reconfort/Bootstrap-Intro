@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Into to Bootstrap</title>
+  </head>
+  <body style="padding : 10%">
+    <!-- Header  -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ScrollSpy -->
+    <h1>ScrollSpy</h1>
+    <div class="container p-4">
+      <div class="row p-4">
+        <nav
+          id="navbar-example3"
+          class="navbar navbar-light bg-light flex-column align-items-stretch p-3 col p-4"
+        >
+          <a class="navbar-brand" href="#">Navbar</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Item 1</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+              <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+            </nav>
+            <a class="nav-link" href="#item-2">Item 2</a>
+            <a class="nav-link" href="#item-3">Item 3</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+              <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+            </nav>
+          </nav>
+        </nav>
+
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-offset="0"
+          tabindex="0"
+          class="col p-4"
+        >
+          <h4 id="item-1">Item 1</h4>
+          <p>...</p>
+          <h5 id="item-1-1">Item 1-1</h5>
+          <p>...</p>
+          <h5 id="item-1-2">Item 1-2</h5>
+          <p>...</p>
+          <h4 id="item-2">Item 2</h4>
+          <p>...</p>
+          <h4 id="item-3">Item 3</h4>
+          <p>...</p>
+          <h5 id="item-3-1">Item 3-1</h5>
+          <p>...</p>
+          <h5 id="item-3-2">Item 3-2</h5>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>Cards</h1>
+    <!-- Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="card" style="width: 18rem">
+          <img src="./assets/image.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mobile App</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              earum? Autem eaque odit veniam eum voluptate minus perferendis
+              ratione fugit temporibus exercitationem ut ab minima enim facere
+              architecto, neque eligendi.
+            </p>
+            <a href="#" class="btn btn-primary">Visit blog</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="./assets/image.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mobile App</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              earum? Autem eaque odit veniam eum voluptate minus perferendis
+              ratione fugit temporibus exercitationem ut ab minima enim facere
+              architecto, neque eligendi.
+            </p>
+            <a href="#" class="btn btn-primary">Visit blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="margin-top: 3rem;">Buttons</h1>
+    <!-- Buttons  -->
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+
+    <!-- Badges  -->
+    <h1 style="margin-top: 3rem;">Badges</h1>
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      >
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <!-- Modals  -->
+    <h1 style="margin-top: 3rem;">Modals</h1>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Woohoo, you're reading this text in a modal!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+Reconfort Daniel (Netfort)
+This conversation is just between you and 
+@Reconfort Daniel (Netfort)
+. Take a look at their profile to learn more about them.
+New
+
+
+Reconfort Daniel (Netfort)
+:house_with_garden:  10:38 PM
+<!-- Bootstrap Form  -->
+    <h1 style=“margin-top: 3rem;“>Form</h1>
+    <form>
+      <div class=“mb-3”>
+        <label for=“exampleInputEmail1" class=“form-label”>Email address</label>
+        <input
+          type=“email”
+          class=“form-control”
+          id=“exampleInputEmail1"
+          aria-describedby=“emailHelp”
+        />
+        <div id=“emailHelp” class=“form-text”>
+          We’ll never share your email with anyone else.
+        </div>
+      </div>
+      <div class=“mb-3">
+        <label for=“exampleInputPassword1” class=“form-label”>Password</label>
+        <input
+          type=“password”
+          class=“form-control”
+          id=“exampleInputPassword1”
+        />
+      </div>
+      <div class=“mb-3 form-check”>
+        <input type=“checkbox” class=“form-check-input” id=“exampleCheck1” />
+        <label class=“form-check-label” for=“exampleCheck1”>Check me out</label>
+      </div>
+      <button type=“submit” class=“btn btn-primary”>Submit</button>
+    </form>
+    <!-- Grid System  -->
+    <h1 style=“margin-top: 3rem;“>Grids</h1>
+    <div class=“container”>
+      <div class=“row bg-light”>
+        <div class=“col bg-secondary”>1 of 2</div>
+        <div class=“col bg-success”>2 of 2</div>
+      </div>
+      <div class=“row bg-light”>
+        <div class=“col bg-danger”>1 of 3</div>
+        <div class=“col bg-warning”>2 of 3</div>
+        <div class=“col bg-info”>3 of 3</div>
+      </div>
+    </div>    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
